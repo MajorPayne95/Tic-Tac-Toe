@@ -1,63 +1,91 @@
 * {
-    width: 100%;
-    margin: 0;
-    /*overflow: hidden; */
-  }
-  
-  .header {
-    background-color: green;
-    text-align: center;
-    padding: 1% 0;
-  }
-  
-  .footer {
-    height: 50vh;
-    padding: 2% 0;
-    background-color: yellow;
-  }
-  
-  .game {
-    width: 100%;
-    background-color: yellow;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .gameboard {
-    width: fit-content;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-    margin-top: 40px;
-    gap: 10px;
-    justify-content: center;
-    background-color: orange;
-  }
-  
-  .region {
-    border: solid 1px;
-    aspect-ratio: 1/1;
-    width: 125px;
-    background-color: gray; 
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size:calc(100% + 4vw);
-  }
-  
-  .controls {
-    width: calc(125px * 3);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 10px;
-  }
-  
-  input {
-    width: 40%;
-    cursor: pointer;
-  }
-  
+  width: 100%;
+  margin: 0;
+  /*overflow: hidden; */
+}
+
+.header {
+  background-color: green;
+  text-align: center;
+  padding: 1% 0;
+}
+
+.footer {
+  height: 50vh;
+  padding: 2% 0;
+  background-color: yellow;
+}
+
+.game {
+  width: 100%;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameboard {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  margin-top: 40px;
+  gap: 10px;
+  justify-content: center;
+  background-color: orange;
+}
+
+.region {
+  border: solid 1px;
+  aspect-ratio: 1/1;
+  width: 125px;
+  background-color: gray; 
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:calc(100% + 4vw);
+}
+
+.controls {
+  width: calc(125px * 3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.button {
+  width: 40%;
+  cursor: pointer;
+}
+
+#startButton {
+  width: 250px;
+  margin-top: 10px;
+}
+
+.player {
+  width: 200px;
+  margin: 5px 0;
+  font-style: italic;
+}
+
+.title, p {
+  margin-top: 30px;
+  padding: 0 10px;
+  text-align: center;
+  background-color: white;
+  width: fit-content;
+}
+
+p {
+  position: absolute;
+  font-size: 50px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
