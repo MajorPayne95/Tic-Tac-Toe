@@ -7,26 +7,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
-      <h1>Title</h1>
+  <div class="header">
+    <h1>Tic-Tac-Toe</h1>
+  </div>
+  <div class="game">
+    <h2 class="title">Player X always goes first.  Enter names to start a game!</h2>
+    <input type="text" class="player" id="player1" placeholder="Player X">
+    <input type="text" class="player" id="player2" placeholder="Player O">
+    <input type="submit" class="button" id="startButton" value="Start Game">
+    <p class="results" id="results"></p>
+    <div class="gameboard">
+      <div class="region" id="0"></div>
+      <div class="region" id="1"></div>
+      <div class="region" id="2"></div>
+      <div class="region" id="3"></div>
+      <div class="region" id="4"></div>
+      <div class="region" id="5"></div>
+      <div class="region" id="6"></div>
+      <div class="region" id="7"></div>
+      <div class="region" id="8"></div>
     </div>
-    <div class="game">
-      <div class="gameboard">
-        <div class="region">X</div>
-        <div class="region">O</div>
-        <div class="region">X</div>
-        <div class="region">X</div>
-        <div class="region">X</div>
-        <div class="region">O</div>
-        <div class="region">O</div>
-        <div class="region">X</div>
-        <div class="region">O</div>
-      </div>
-      <div class="controls" id="controls">
-        <input type="button" class="gameWipe" value="New Game">
-        <input type="button" class="gameWipe" value="Restart Game">
-      </div>
+    <div class="controls" id="controls">
+      <input type="button" class="gameWipe button" value="New Game">
     </div>
-    <div class="footer"></div>
-  </body>
+  </div>
+  <div class="footer"></div>
+</body>
 </html>
