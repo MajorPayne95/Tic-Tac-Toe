@@ -98,7 +98,9 @@ const Gameboard = (() => {
          return false
        }
      }
-    gameResult.innerText = ("Tie!")
+    if (gameResult.innerText == "") {
+      gameResult.innerText = ("Tie!")
+    }
   }
   
   startButton.addEventListener("click", startGame)
